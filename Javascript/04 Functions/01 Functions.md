@@ -1,6 +1,6 @@
 # Functions
 
-Javascript is a **functional** language. It encorages the use of Functions.
+Javascript is a **functional** language. It encourages the use of Functions.
 
 * Functions are **reusable** snippets of code that performs a **task**.
 * Functions usually have **inputs** (parameters).

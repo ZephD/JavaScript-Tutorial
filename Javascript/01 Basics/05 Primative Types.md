@@ -1,8 +1,8 @@
 # Primitive Types
 
 * Stored by **value**.
-* **Immutable** (cannot be changed).
 * Directly holds the **data**.
+* **Immutable** (cannot be changed).
 
 Assigning a primitive **copies the value**.
 

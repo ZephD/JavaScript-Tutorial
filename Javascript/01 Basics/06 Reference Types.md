@@ -1,5 +1,9 @@
 # Reference Types
 
+* Stored by **reference**.
+* Points to the data, does not hold the data.
+* **Mutable**, can be modified (e.g. adding a property/element).
+
 ## Object
 
 Key-Value containers

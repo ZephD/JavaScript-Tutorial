@@ -32,6 +32,12 @@ console.log(!a) // false
 console.log(!b) // true
 ```
 
+Inverting twice is a good way to convert truthiness to a boolean.
+
+```javascript
+console.log(!!a) // true
+```
+
 ---
 
 # Short Circuiting
@@ -40,17 +46,17 @@ These checks use **short-circuiting**.
 They skip redundant subsequent checks (saving CPU resources).
 
 ```javascript
-function f1() {
+function funcTrue() {
   console.log('F1')
   return true
 }
 
-function f2() {
+function funcFalse() {
   console.log('F2')
   return false
 }
 
-f2() && f1() // f1 is not called, as f2 returned false.
+funcFalse() && funcTrue() // funcTrue is not called
 
-f1() || f2() // f2 is not called, as f1 already returned true.
+funcTrue() || funcFalse() // funcFalse is not called
 ```
