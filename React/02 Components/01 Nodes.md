@@ -4,6 +4,9 @@ React components are JavaScript **functions** that return a UI element (a "React
 
 JSX stands for **J**ava**s**cript **X**ML, which has HTML-like syntax.
 
+By convention, components use PascalCase (capital first letter) to help differentiate them from variables.  
+(Similar to JS Classes.)
+
 ```javascript
 const MyComponent = (props) => {
 
@@ -15,6 +18,7 @@ const MyComponent = (props) => {
   )
 }
 
+// Nearly always export your component as default.
 export default MyComponent
 ```
 

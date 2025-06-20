@@ -19,10 +19,12 @@ One way to delay actions (or to mock asynchronous code) is the `setTimeout` func
 
 ```javascript
 console.log('This log happens first.')
-setTimeout(() => {
+const timeoutId = setTimeout(() => {
   console.log('This log happens third - after one second.')
 }, 1000) // 1000ms = 1s
 console.log('This log happens second.')
+
+clearTimeout(timeoutId) // This will cancel the timeout, if called before it triggers.
 ```
 
 The `setTimeout` is created as normal (after the first message) in a script like fashion,

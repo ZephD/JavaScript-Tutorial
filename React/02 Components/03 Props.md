@@ -17,6 +17,8 @@ const GreetPage = () => (
 export default GreetPage
 ```
 
+Changes to `props` variables trigger the component to re-render.
+
 Since `props` is just an object, it can be destructured to retrieve props immediately.
 
 ```javascript

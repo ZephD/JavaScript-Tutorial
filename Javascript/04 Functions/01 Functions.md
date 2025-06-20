@@ -1,6 +1,7 @@
 # Functions
 
-Javascript is a **functional** language. It encourages the use of Functions.
+Javascript is primarily a **functional** language.  
+It encourages the use of functions.
 
 * Functions are **reusable** snippets of code that performs a **task**.
 * Functions usually have **inputs** (parameters).
@@ -98,7 +99,7 @@ We'll probably use these later on.
 
 # Best Practices
 
-* Prefer Arrow functions.
+* Prefer the use of Arrow functions.
 * Use clear function names.
 * Keep functions to one task/responsibility.
 * Avoid side-effects (Pure Functions).
