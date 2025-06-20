@@ -102,6 +102,23 @@ const obj = { a: 1, b: 2, c: 3 }
 console.log(Object.entries(obj)) /// [ ["a",1], ["b",2], ["c",3] ]
 ```
 
+## JSON.stringify(), JSON.parse()
+
+You can convert an Object to a string, and vice versa.
+
+```javascript
+const obj = { key: 'value' }
+const objStr = JSON.stringify(obj)
+console.log(objStr) // "{ "key": "value" }"
+
+const newObj = JSON.parse(objStr)
+console.log(newObj) // { key: 'value }
+```
+
+This is a computationally expensive way to (deep) clone an object.
+
+Stringify does not convert functions within an object.
+
 ---
 
 # Object Equality
