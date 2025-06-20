@@ -11,7 +11,12 @@ Once the things is ready, it can _then_ action it.
 
 This is called **asynchronous** behaviour.
 
-# setTimeout()
+> **Further Reading**: [The Event Loop](https://www.youtube.com/watch?v=eiC58R16hb8)
+>
+> Behind the scenes, JavaScript uses something called the **Event Loop**
+> to keep track of asynchronous tasks and runs them when JS is idle.
+
+## setTimeout()
 
 One way to delay actions (or to mock asynchronous code) is the `setTimeout` function.
 
@@ -32,9 +37,19 @@ and is setup to run the given function after a delay.
 
 Once set up, the rest of the script continues (logging the second message).
 
-After the delay, the provided function is run (logging the third message).
+After the delay, the provided function is run (logging the third message).  
+(Assuming it's not cleared like in the example above. Comment it out to see this.)
 
-> **Further Reading**: The Event Loop
-> 
-> Behind the scenes, JavaScript uses something called the **Event Loop** to keep track of delayed tasks and run them when
-ready.
+## setInterval()
+
+A similar function to setTimeout, but this sets up a function to run repeatedly.
+
+```javascript
+const intervalId = setInterval(() => {
+  console.log('Hello!')
+}, 1000) // 1000ms = 1s
+
+clearInterval(intervalId) // This will stop the interval.
+```
+
+This will log "Hello!" every second, until cleared.
