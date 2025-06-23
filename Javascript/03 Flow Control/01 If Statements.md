@@ -7,7 +7,7 @@ Sometimes we want to run a block of code, only if a particular condition is met.
 "If (condition is true) then { run this code }".
 
 ```javascript
-let value = 7
+const value = 7
 
 if (value === 7) {
   // Ooh, a code block! Local scope!
@@ -86,3 +86,7 @@ console.log(result)
 ```
 
 Use whichever gives the best clarity or convenience.
+
+<details>
+test
+</details>
